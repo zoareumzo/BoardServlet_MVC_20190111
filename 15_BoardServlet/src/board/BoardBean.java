@@ -47,6 +47,8 @@ public class BoardBean {
 		this.passwd=passwd;
 	}
 	
+	
+	
 	public BoardBean(String writer, String subject, String email, String content, String passwd){
 		super();
 		this.writer=writer;
@@ -55,6 +57,25 @@ public class BoardBean {
 		this.content=content;
 		this.passwd=passwd;
 	}
+	
+
+
+	public BoardBean(int num, String writer, String subject, String email, String content, String passwd,
+			Timestamp reg_date, String ip, int ref, int re_step, int re_level) {
+		super();
+		this.num=num;
+		this.writer=writer;
+		this.subject=subject;
+		this.email=email;
+		this.content=content;
+		this.passwd=passwd;
+		this.reg_date=reg_date;
+		this.ip=ip;
+		this.ref=ref;
+		this.re_step=re_step;
+		this.re_level=re_level;
+	}
+
 	public int getNum() {
 		return num;
 	}
